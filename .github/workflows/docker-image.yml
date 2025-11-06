@@ -32,7 +32,7 @@ jobs:
           context: ./EVENT-SPRINGBOOT
           file: ./EVENT-SPRINGBOOT/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Eventansible-backend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/eventansible-backend:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./EVENT-REACT
           file: ./EVENT-REACT/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/Eventansible-frontend:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/eventansible-frontend:latest
